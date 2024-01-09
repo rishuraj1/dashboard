@@ -154,8 +154,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="h-full flex">
-          <NavigationSidebar options={options} />
-          <div className='flex flex-col w-full'>
+          <div className='h-full flex fixed z-30'>
+            <NavigationSidebar options={options} />
+          </div>
+          <div className='flex flex-col w-full md:ml-[224px]'>
             <Header options={options} />
             {children}
           </div>

@@ -1,6 +1,8 @@
 "use client"
 
+import { Menu } from "lucide-react"
 import { usePathname } from "next/navigation"
+import MobileToggle from "../toggle-menu"
 
 interface HeaderProps {
     options: {
@@ -43,8 +45,9 @@ const Header = ({
 }: HeaderProps) => {
     const pathname = usePathname()
     return (
-        <div className="flex px-8 py-3 items-center gap-4 border-b-[#D9D9D9] border-[1px] w-full">
+        <div className="flex md:flex-row flex-col px-8 py-3 md:items-center gap-4 border-b-[#D9D9D9] border-[1px] w-full">
             <div className="flex gap-4 items-center justify-start flex-1">
+                <MobileToggle />
                 <div className="text-[20px] font-medium text-[#1A181E]">
                     {
                         options?.map((option, index) => (
