@@ -70,11 +70,11 @@ const Header = ({
                 <input
                     type="text"
                     placeholder="Search features, tutorials, etc."
-                    className="text-[#808080] bg-transparent text-[15px] font-normal w-full px-1 border-none focus:ring-0"
+                    className="text-[#808080] bg-transparent text-[15px] outline-none font-normal w-full px-1 border-none focus:ring-0"
                 />
             </div>
 
-            <div className="flex justify-end items-start flex-1">
+            <div className="md:flex justify-end items-start flex-1 ">
                 <div className="gap-3 flex items-start">
                     <div className="w-[40px] h-[40px] bg-[#E6E6E6] rounded-full shrink-0 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" className="w-[20px] h-[20px] shrink-0">

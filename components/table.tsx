@@ -60,10 +60,10 @@ const TableComp = () => {
         <Table className="w-full">
             <TableHeader>
                 <TableRow className="bg-[#F2F2F2] rounded-[4px] py-[10px] px-3">
-                    <TableHead>Order ID</TableHead>
-                    <TableHead>Status</TableHead>
-                    <TableHead>TRN ID</TableHead>
-                    <TableHead>Refund Date</TableHead>
+                    <TableHead className="w-1/5">Order ID</TableHead>
+                    <TableHead className="w-1/5">Status</TableHead>
+                    <TableHead className="w-1/5">TRN ID</TableHead>
+                    <TableHead className="w-1/5">Refund Date</TableHead>
                     <TableHead className="flex items-center justify-end">Order Amount</TableHead>
                 </TableRow>
             </TableHeader>

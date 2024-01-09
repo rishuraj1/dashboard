@@ -153,8 +153,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="h-full flex">
-          <div className='h-full md:flex hidden fixed z-30'>
+        <div className="h-full flex w-full">
+          <div className='h-full md:flex hidden md:fixed z-30'>
             <NavigationSidebar options={options} />
           </div>
           <div className='flex flex-col w-full md:ml-[224px]'>

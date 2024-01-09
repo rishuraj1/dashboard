@@ -29,25 +29,27 @@ const PayoutsPage = () => {
                 </Select>
             </div>
 
-            <div className="flex md:flex-row flex-col md:tems-start justify-between gap-5 self-stretch">
-                <div className="flex w-[356.67px] h-[154px] p-5 flex-col items-start gap-4 self-stretch rounded-[8px] bg-[#146eb4] relative">
-                    <div className="font-normal justify-between flex gap-4 text-white h-[24px] items-center">
-                        <p className="text-[16px]">
-                            Next Payouts
-                        </p>
-                        <HelpCircle className="w-[16px] h-[16px]" />
+            <div className="flex md:flex-row flex-col md:tems-start justify-between gap-5 self-stretch w-full flex-wrap">
+                <div className="rounded-[8px] flex-grow bg-[#146Eb4] text-white min-w-[300px]">
+                    <div className="p-5 flex flex-col gap-4">
+                        <div className="font-normal justify-between flex gap-4 text-white h-[24px] items-center">
+                            <p className="text-[16px]">
+                                Next Payouts
+                            </p>
+                            <HelpCircle className="w-[16px] h-[16px]" />
+                        </div>
+                        <div className="h-[38px] w-full justify-between flex items-center">
+                            <p className="text-[32px] font-medium text-white flex justify-between items-center">
+                                ₹2,312.23
+                            </p>
+                            <span className="text-white underline flex items-center gap-1">
+                                23 orders
+                                <ArrowRight className="w-4 h-4" />
+                            </span>
+                        </div>
                     </div>
-                    <div className="h-[38px] w-full justify-between flex items-center">
-                        <p className="text-[32px] font-medium text-white flex justify-between items-center">
-                            ₹2,312.23
-                        </p>
-                        <span className="text-white underline flex items-center gap-1">
-                            23 orders
-                            <ArrowRight className="w-4 h-4" />
-                        </span>
-                    </div>
-                    <div className="w-[356.67px] h-[36px] bg-[#0E4F82] absolute flex rounded-[8px] justify-between px-[24px] py-[8px] bottom-0 right-0 self-stretch">
-                        <p className="text-[14px] font-normal text-[#F2F2F2]">
+                    <div className="px-6 py-2 bg-[#0E4F82] flex justify-between rounded-[8px] text-[#F2F2F2] items-center">
+                        <p>
                             Next payout date:
                         </p>
                         <p className="text-[14px] font-medium text-[#F2F2F2]">
@@ -56,7 +58,7 @@ const PayoutsPage = () => {
                     </div>
                 </div>
 
-                <div className="h-[118px] w-[356.67px] gap-[24px] flex flex-col shadow-md">
+                <div className="h-[118px] min-w-[300px] flex flex-col shadow-cardShadow flex-grow">
                     <div className="flex flex-col p-[20px] gap-4">
                         <p className="flex items-center text-[#4D4D4D]">
                             Amount Pending
@@ -75,7 +77,7 @@ const PayoutsPage = () => {
                 </div>
 
 
-                <div className="h-[118px]  w-[356.67px] gap-[24px] flex flex-col shadow-md">
+                <div className="h-[118px] gap-[24px] flex flex-col shadow-cardShadow flex-grow">
                     <div className="flex flex-col p-[20px] gap-4">
                         <p className="flex items-center text-[#4D4D4D]">
                             Amount Processed
@@ -91,23 +93,21 @@ const PayoutsPage = () => {
             </div>
 
             <div className="gap-6">
-                <div className="h-[84px] w-[252px] gap-6">
+                <div className="flex flex-col gap-6">
                     <p className="text-[20px] font-medium text-[#1A181E]">
                         Transactions | This Month
                     </p>
-                    <div className="h-[84px] w-[252px]">
-                        <div className="flex justify-between">
-                            <button
-                                className="bg-[#E6E6E6] rounded-[40px] w-[118px] py-[6px] px-[16px] text-[#808080] text-[14px] font-medium"
-                            >
-                                Payouts (22)
-                            </button>
-                            <button
-                                className="bg-[#146EB4] rounded-[40px] w-[118px] py-[6px] px-[16px] text-white text-[14px] font-medium"
-                            >
-                                Refunds (6)
-                            </button>
-                        </div>
+                    <div className="flex justify-between gap-3">
+                        <button
+                            className="bg-[#E6E6E6] rounded-[40px] w-[118px] py-[6px] px-4 text-[#808080] text-[14px] font-medium"
+                        >
+                            Payouts (22)
+                        </button>
+                        <button
+                            className="bg-[#146EB4] rounded-[40px] w-[118px] py-[6px] px-[16px] text-white text-[14px] font-medium"
+                        >
+                            Refunds (6)
+                        </button>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@ const PayoutsPage = () => {
                         <SearchIcon className="w-4 h-4 text-[#4D4D4D]" />
                         <input
                             placeholder="Order ID or transaction ID"
-                            className="text-[#4D4D4D] text-[14px] font-normal"
+                            className="text-[#4D4D4D] text-[14px] font-normal outline-none w-full bg-transparent"
                         />
                     </div>
 
