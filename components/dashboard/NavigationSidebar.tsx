@@ -2,10 +2,10 @@
 
 import Image from "next/image"
 import { useRouter, useParams, usePathname } from "next/navigation"
-import { pexels } from '../../public'
 import { ArrowBigDown } from "lucide-react"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { cn } from "@/lib/utils"
+import { logo } from '../../public'
 
 interface NavigationSidebarProps {
     options: {
@@ -22,12 +22,12 @@ const NavigationSidebar = ({
     const pathname = usePathname()
 
     return (
-        <aside className="bg-[#1E2640] hidden md:flex w-[224px] max-w-[224px] flex-col items-center py-[16px] px-[10px] gap-4 flex-1">
-            <div className="flex flex-col gap-6 flex-1">
+        <aside className="bg-[#1E2640] md:flex w-[224px] max-w-[224px] flex-col h-full items-center md:py-[16px] pt-[30px] px-[10px] gap-4 md:flex-1">
+            <div className="flex flex-col gap-6 md:flex-1 mb-20">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-1">
                         <Image
-                            src={pexels}
+                            src={logo}
                             width={39}
                             height={39}
                             alt="Logo"

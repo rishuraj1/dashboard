@@ -145,10 +145,10 @@ const MobileToggle = () => {
                     <Menu className="w-5 h-5 text-black" />
                 </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="p-0 flex gap-0">
-                <NavigationSidebar
-                    options={options}
-                />
+            <SheetContent side="left" className="p-0 gap-0 w-[224px]">
+                <div className="w-[224px] h-full bg-[#1E2640]">
+                    <NavigationSidebar options={options} />
+                </div>
             </SheetContent>
         </Sheet>
     );

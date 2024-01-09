@@ -46,7 +46,7 @@ const PayoutsPage = () => {
                             <ArrowRight className="w-4 h-4" />
                         </span>
                     </div>
-                    <div className="w-[356.67px] h-[36px] bg-[#0E4F82] absolute flex justify-between rounded-[8px] justify-between px-[24px] py-[8px] bottom-0 right-0">
+                    <div className="w-[356.67px] h-[36px] bg-[#0E4F82] absolute flex rounded-[8px] justify-between px-[24px] py-[8px] bottom-0 right-0 self-stretch">
                         <p className="text-[14px] font-normal text-[#F2F2F2]">
                             Next payout date:
                         </p>
