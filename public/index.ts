@@ -1,0 +1,1 @@
+export { default as pexels } from './pexels-yurii-hlei-1365795.jpg'
